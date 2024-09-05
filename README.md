@@ -5,16 +5,16 @@ Snowballs is a hotkeys-first, async, always-on, GPT client for macOS.
 This product requires you to create an [API key for OpenAI.](https://platform.openai.com/api-keys)
 
 ### Built for developers
-Snowballs enables a quick workflow, where you can simply start a chat with ⌥ + Q, write your query and return back to your code editor by pressing ⌥ + Q again, without ever using your mouse.
+Snowballs enables a quick workflow, where you can simply start a chat with `⌥ + Q`, write your query and return back to your code editor by pressing `⌥ + Q` again, without ever using your mouse.
 
 # Installation
 1. Head to Releases and download the latest version and run it
 2. Tap the 🧤 Mitten icon in the Menu bar, and select Configure
 3. Enter your API Key, keychain will ask for permission at this point.
 4. Start using it:
-    - Press ⌥ + Q to start chatting
-    - ⌥ + W and ⌥ + S to move between chats
-    - ⌥ + D to delete a chat
+    - Press `⌥ + Q` to start chatting
+    - `⌥ + W` and `⌥ + S` to move between chats
+    - `⌥ + D` to delete a chat
 5. Consider enabling Launch at Login.
 
 # Updates
@@ -24,6 +24,7 @@ Keep an eye on the releases page for now, there's no automated process in place,
 - [ ] Add error handling
 - [ ] Improve the logging
 - [ ] Setup "Check for updates"
+- [ ] App Icon!
 - [ ] Scroll without the mouse
 - [ ] Improve the rendering in such a way that enables text selection while the response is being written
 - [ ] Add "Copy to Clipboard" for codeblocks
