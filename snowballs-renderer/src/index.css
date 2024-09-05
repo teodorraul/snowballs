@@ -1,0 +1,142 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    color: rgba(220,220,220,1);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 60px;
+}
+
+.message {
+    padding: 0px 0px;
+    margin: 0px 30px;
+    box-sizing: border-box;
+}
+
+.message.user {
+    opacity: 1;
+    white-space: pre-wrap;
+    color: #FFF;
+    font-weight: 600;
+    position: relative;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 0px 20px 0px 42px;
+    background-color: #1E1E1E;
+    overflow-x: auto;
+}
+
+.message.ai {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.message.user:after {
+    content: "→";
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 20px;
+}
+
+li {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p, li {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+em, s, b, strong {
+    color: #FFF;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 13px;
+    line-height: 19px;
+    color: #fff;
+}
+h5 {
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+}
+h4 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 20px;
+    line-height: 22px;
+    color: #fff;
+    margin-top: 28px;
+}
+h1 {
+    font-size: 23px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 20px;
+}
+
+a {
+    color: rgba(160,180,255,1);
+}
+
+code {
+    display: inline-block;
+    padding: 4px 5px 3px 5px;
+    line-height: 1em;
+    margin: 0px 1px;
+    background-color: rgba(255,255,255,0.12);
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+pre code {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 14px;
+    background-color: rgba(0,0,0,0.3);
+    white-space: pre;
+    margin-left: -4px;
+    box-sizing: border-box;
+    width: calc(100% + 4px);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
