@@ -20,7 +20,7 @@ class ProviderOpenAI {
     
     func makeGenerateTitleRequest(forChatId: UUID, context: [ChatQuery.ChatCompletionMessageParam], receiver: MessageStreamReceiver) async {
         var messages: [ChatQuery.ChatCompletionMessageParam] = context.count > 0 ? [context.first!] : []
-       messages.insert(.system(.init(content: "Always describe in only 3 words the user's intent behind the next prompt. First word should always be a noun highly related to the subject of the prompt.")), at: 0)
+       messages.insert(.system(.init(content: "Always return a single emoji that's very closely related to the next prompt.")), at: 0)
        let query = ChatQuery(messages: messages, model: .gpt4_o_mini)
 
         Logs.shared.core("starting title completion request")
