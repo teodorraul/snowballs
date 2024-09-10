@@ -64,7 +64,7 @@ actor MessageStreamReceiver {
         await chat?.saveTitle(title: title)
         await chat?.uiEvents.send(.chatGainedTitle(title: title))
         if let chatId = chat?.id {
-            await SnowballsStore.shared.uiEvents.send(.snowballGainedTitle(id: chatId, snowballTitle: title.shortened))
+            await SnowballsStore.shared.uiEvents.send(.snowballGainedTitle(id: chatId, snowballTitle: title.fullTitle))
         }
     }
     

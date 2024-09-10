@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let SNOWBALL_SIZE: CGFloat = 44
+let SNOWBALL_SIZE: CGFloat = 52
 let SNOWBALL_PADDING: CGFloat = 20
 let animationDuration = 0.22
 
@@ -19,7 +19,7 @@ struct SnowballsContainerView: View {
         HStack() {
             GeometryReader { scrollGeo in
                 ScrollView(.vertical, showsIndicators: false) {
-                    VStack(alignment: .center, spacing: 10) {
+                    VStack(alignment: .center, spacing: 5) {
                         Spacer().frame(maxHeight: .infinity).layoutPriority(1)
                         ForEach(snowballsStore.snowballs, id: \.self.id){ snowball in
                             let isActive = snowball == snowballsStore.activeSnowball

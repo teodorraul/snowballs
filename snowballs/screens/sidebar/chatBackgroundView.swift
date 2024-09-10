@@ -30,7 +30,7 @@ class ChatBackground: NSView {
         background.layer?.cornerRadius = 16.0
         
         background.wantsLayer = true
-        background.layer?.backgroundColor = NSColor(red: 0.153, green: 0.149, blue: 0.153, alpha: 1).cgColor
+        background.layer?.backgroundColor = NSColor.background.cgColor
         background.layer?.borderWidth = 0.5
         background.layer?.borderColor = NSColor.white.withAlphaComponent(0.2).cgColor
     

@@ -43,7 +43,7 @@ class ChatViewController: NSViewController {
         self.chatBox.trackChat(chatId: chatId)
         
         if let chat = ChatsStore.shared.getChat(id: chatId) {
-            self.chatHeader.setTitle(title: chat.title?.fullTitle ?? "Untitled Chat")
+            self.chatHeader.setTitle(title: chat.title?.fullTitle ?? "Blank Chat")
             if let listener = uiEventsListener {
                 listener.cancel()
             }
