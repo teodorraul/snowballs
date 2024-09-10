@@ -30,7 +30,6 @@ Keep an eye on the releases page for now, there's no automated process in place,
 - [ ] Improve the rendering in such a way that enables text selection while the response is being written
 - [ ] Add "Copy to Clipboard" for codeblocks
 - [ ] Window Resizing/Moving
-- [ ] Maybe add an icon for each snowball, depending on the context of the chat
 
 Consider suggesting other improvements.
 
