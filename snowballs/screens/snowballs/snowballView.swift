@@ -38,7 +38,7 @@ struct SnowballView: View {
                     Circle().fill(.clear).frame(width: SNOWBALL_SIZE, height: SNOWBALL_SIZE).overlay {
                         if !state.isLoading {
                             if state.title != "" {
-                                Text(state.title).font(.system(size: 20, weight: .semibold)).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center).foregroundStyle(isActive ? .black : .white).animation(.easeInOut(duration: animationDuration), value: isActive).offset(x: 0, y: 1)
+                                Text(state.title).font(.system(size: 20, weight: .semibold)).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center).foregroundStyle(isActive ? .black : .white).animation(.easeInOut(duration: animationDuration), value: isActive).offset(x: 0.5, y: 0)
                             }
                         }
                         if state.isLoading {
@@ -52,7 +52,7 @@ struct SnowballView: View {
                 }
             }.zIndex(100)
             Circle().fill(isActive ? .black : .clear).stroke(isActive ? Color(NSColor(white: 1.0, alpha: 1.0)) : Color(NSColor(white: 1.0, alpha: 0.325)), lineWidth: isActive ? 2 : 1).blendMode(isActive ? .normal : .plusLighter)
-                .frame(width: SNOWBALL_SIZE + 8, height: SNOWBALL_SIZE + 8).scaleEffect(x: isActive ? 1.0 : 0.833, y: isActive ? 1.0 : 0.833).offset(x: -4, y: -4).zIndex(isActive ? 10 : 1000)
+                .frame(width: SNOWBALL_SIZE + 8, height: SNOWBALL_SIZE + 8).scaleEffect(x: isActive ? 1.0 : 0.85, y: isActive ? 1.0 : 0.85).offset(x: -4, y: -4).zIndex(isActive ? 10 : 1000)
                 .animation(.easeInOut(duration: animationDuration), value: isActive)
         }.frame(width: SNOWBALL_SIZE + 6, height: SNOWBALL_SIZE + 6, alignment: .center)
 
